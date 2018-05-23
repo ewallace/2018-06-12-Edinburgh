@@ -58,12 +58,17 @@ and our administrator may contact you if we need any extra information.</h4>
   
   Edit the general explanatory paragraph below if you want to change the pitch.
 {% endcomment %}
-<p>
-  <a href="{{site.swc_site}}">Software Carpentry</a>
-  aims to help researchers get their work done
-  in less time and with less pain
-  by teaching them basic research computing skills.
-</p>  
+
+
+{% if page.carpentry == "swc" %}
+  {% include sc/intro.html %}
+{% elsif page.carpentry == "dc" %}
+  {% include dc/intro.html %}
+{% elsif page.carpentry == "lc" %}
+  {% include lc/intro.html %}
+{% endif %}
+
+
 <p>
   This workshop is hosted by EPCC, Edinburgh Parallel Computing Centre, and organised in collaboration by ARCHER, the Software Sustainability Institute, and UoE Research Data Service.
 </p>
@@ -96,14 +101,6 @@ The <a href="http://www.ed.ac.uk/information-services/research-support/research-
     "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>".
   </em>
 </p>
-{% endcomment %}
-{% if page.carpentry == "swc" %}
-  {% include sc/intro.html %}
-{% elsif page.carpentry == "dc" %}
-  {% include dc/intro.html %}
-{% elsif page.carpentry == "lc" %}
-  {% include lc/intro.html %}
-{% endif %}
 
 {% comment %}
   AUDIENCE
