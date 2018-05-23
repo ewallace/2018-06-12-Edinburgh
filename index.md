@@ -7,13 +7,13 @@ country: "gb"      # lowercase two-letter ISO country code such as "fr" (see htt
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "55.943198, -3.186577"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
 humandate: "Jun 12-13, 2018"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+humantime: "9:00 - 17:00"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2018-06-12      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2018-06-13        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Edward Wallace","Manos Farsarakis","Ioanna Lampaki","Giacomo Peru"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["FIXME"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["Jennifer.Daub@ed.ac.uk","Edward.Wallace@ed.ac.uk"3]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
+collaborative_notes:  http://pad.software-carpentry.org/2018-06-12-Edinburgh # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
@@ -55,9 +55,47 @@ and our administrator may contact you if we need any extra information.</h4>
 
 {% comment %}
   INTRODUCTION
+  
+  Edit the general explanatory paragraph below if you want to change the pitch.
+{% endcomment %}
+<p>
+  <a href="{{site.swc_site}}">Software Carpentry</a>
+  aims to help researchers get their work done
+  in less time and with less pain
+  by teaching them basic research computing skills.
+</p>  
+<p>
+  This workshop is hosted by EPCC, Edinburgh Parallel Computing Centre, and organised in collaboration by ARCHER, the Software Sustainability Institute, and UoE Research Data Service.
+</p>
+<p>
+  <a href="http://www.archer.ac.uk">ARCHER</a>, the UK's national
+  supercomputing service, offers training in software development and
+  high-performance computing to scientists and researchers across the
+  UK. As part of our training service we are running a two-day Data
+  Carpentry workshop. 
+</p>
+<p>
+  The <a href="http://www.software.ac.uk">Software Sustanability Institute</a>'s mission is to cultivate better, more sustainable, research software to enable world-class research (<a href="http://softwaresaved.spreadshirt.co.uk/"><em>better software, better research</em></a>). Software is fundamental to research: <a href="http://www.software.ac.uk/blog/2014-12-04-its-impossible-conduct-research-without-software-say-7-out-10-uk-researchers">seven out of ten UK researchers report that their work would be impossible without it</a>.
+</p>
+<p>
+The <a href="http://www.ed.ac.uk/information-services/research-support/research-data-service">Research Data Service</a> is a suite of tools and support for University staff and students to aid them in data management planning, working with data, sharing and preserving their data, and re-skilling. It is delivered by a virtual team spanning across a number of sections of Information Services including EDINA and Data Library, Library & University Collections, IT Infrastructure, User Services, and the Digital Curation Centre.
+</p>
 
-  Edit the general explanatory paragraph below if you want to change
-  the pitch.
+<p>
+  
+  This hands-on workshop will cover basic concepts and tools,
+  including program design, version control, data management,
+  and task automation.
+  Participants will be encouraged to help one another
+  and to apply what they have learned to their own research problems.
+</p>
+<p align="center">
+  <em>
+    For more information on what we teach and why,
+    please see our paper
+    "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>".
+  </em>
+</p>
 {% endcomment %}
 {% if page.carpentry == "swc" %}
   {% include sc/intro.html %}
@@ -69,9 +107,16 @@ and our administrator may contact you if we need any extra information.</h4>
 
 {% comment %}
   AUDIENCE
+  
+  Explain who your audience is. (In particular, tell readers if the workshop is only open to people from a particular institution.
+ {% endcomment %}
+<p id="who">
+  <strong>Who:</strong>
+  The course is aimed at graduate students and other researchers.
+  <strong>You don't need to have any previous knowledge of the tools that will
+    be presented at the workshop.</strong>
+</p>
 
-  Explain who your audience is.  (In particular, tell readers if the
-  workshop is only open to people from a particular institution.
 {% endcomment %}
 {% if page.carpentry == "swc" %}
   {% include sc/who.html %}
@@ -84,11 +129,8 @@ and our administrator may contact you if we need any extra information.</h4>
 {% comment %}
   LOCATION
 
-  This block displays the address and links to maps showing directions
-  if the latitude and longitude of the workshop have been set.  You
-  can use https://itouchmap.com/latlong.html to find the lat/long of an
-  address.
-  https://www.ed.ac.uk/maps/maps?building=david-hume-tower
+This course is at [David Hume Tower, University of Edinburgh](https://www.ed.ac.uk/maps/maps?building=david-hume-tower).
+
 {% endcomment %}
 {% if page.latlng %}
 <p id="where">
@@ -104,7 +146,6 @@ and our administrator may contact you if we need any extra information.</h4>
 {% comment %}
   DATE
 
-  This block displays the date and links to Google Calendar.
 {% endcomment %}
 {% if page.humandate %}
 <p id="when">
@@ -117,7 +158,6 @@ and our administrator may contact you if we need any extra information.</h4>
 {% comment %}
   SPECIAL REQUIREMENTS
 
-  Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
   <strong>Requirements:</strong> Participants must bring a laptop with a
@@ -520,6 +560,7 @@ and our administrator may contact you if we need any extra information.</h4>
   </div>
 </div> {% comment %} End of 'editor' section. {% endcomment %}
 
+{% comment %}
 <div id="python"> {% comment %} Start of 'Python' section. Remove the third paragraph if
            the workshop will teach Python using something other than
            the Jupyter notebook.
@@ -612,6 +653,7 @@ and our administrator may contact you if we need any extra information.</h4>
   </p>
 {% endcomment %}
 </div> {% comment %} End of 'Python' section. {% endcomment %}
+{% endcomment %}
 
 <div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
   <h3>R</h3>
