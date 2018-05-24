@@ -55,11 +55,10 @@ and our administrator may contact you if we need any extra information.</h4>
 
 {% comment %}
   INTRODUCTION
-  
-  Edit the general explanatory paragraph below if you want to change the pitch.
+
+  Edit the general explanatory paragraph below if you want to change
+  the pitch.
 {% endcomment %}
-
-
 {% if page.carpentry == "swc" %}
   {% include sc/intro.html %}
 {% elsif page.carpentry == "dc" %}
@@ -69,50 +68,20 @@ and our administrator may contact you if we need any extra information.</h4>
 {% endif %}
 
 
-<p>
-  This workshop is hosted by EPCC, Edinburgh Parallel Computing Centre, and organised in collaboration by ARCHER, the Software Sustainability Institute, and UoE Research Data Service.
-</p>
-<p>
-  <a href="http://www.archer.ac.uk">ARCHER</a>, the UK's national
-  supercomputing service, offers training in software development and
-  high-performance computing to scientists and researchers across the
-  UK. As part of our training service we are running a two-day Data
-  Carpentry workshop. 
-</p>
-<p>
-  The <a href="http://www.software.ac.uk">Software Sustanability Institute</a>'s mission is to cultivate better, more sustainable, research software to enable world-class research (<a href="http://softwaresaved.spreadshirt.co.uk/"><em>better software, better research</em></a>). Software is fundamental to research: <a href="http://www.software.ac.uk/blog/2014-12-04-its-impossible-conduct-research-without-software-say-7-out-10-uk-researchers">seven out of ten UK researchers report that their work would be impossible without it</a>.
-</p>
-<p>
-The <a href="http://www.ed.ac.uk/information-services/research-support/research-data-service">Research Data Service</a> is a suite of tools and support for University staff and students to aid them in data management planning, working with data, sharing and preserving their data, and re-skilling. It is delivered by a virtual team spanning across a number of sections of Information Services including EDINA and Data Library, Library & University Collections, IT Infrastructure, User Services, and the Digital Curation Centre.
-</p>
 
-<p>
-  
-  This hands-on workshop will cover basic concepts and tools,
-  including program design, version control, data management,
-  and task automation.
-  Participants will be encouraged to help one another
-  and to apply what they have learned to their own research problems.
-</p>
-<p align="center">
-  <em>
-    For more information on what we teach and why,
-    please see our paper
-    "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>".
-  </em>
-</p>
+  This workshop is hosted by [Edinburgh Parallel Computing Centre](https://www.epcc.ed.ac.uk/), and organised in collaboration by [ARCHER](http://www.archer.ac.uk), the [Software Sustainability Institute](http://www.software.ac.uk), and [UoE Research Data Service](https://www.ed.ac.uk/information-services/research-support/research-data-service/about-the-research-data-service).
+
 
 {% comment %}
   AUDIENCE
   
   Explain who your audience is. (In particular, tell readers if the workshop is only open to people from a particular institution.
  {% endcomment %}
-<p id="who">
-  <strong>Who:</strong>
+
   The course is aimed at graduate students and other researchers.
-  <strong>You don't need to have any previous knowledge of the tools that will
-    be presented at the workshop.</strong>
-</p>
+  **You don't need to have any previous knowledge of the tools that will
+    be presented at the workshop.**
+
 
 {% endcomment %}
 {% if page.carpentry == "swc" %}
