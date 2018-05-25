@@ -305,14 +305,13 @@ This course is at [David Hume Tower, University of Edinburgh](https://www.ed.ac.
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
 
+<!--
 <div id="shell"> {% comment %} Start of 'shell' section. {% endcomment %}
   <h3>The Bash Shell</h3>
-
   <p>
     Bash is a commonly-used shell that gives you the power to do simple
     tasks more quickly.
   </p>
-
   <div class="row">
     <div class="col-md-4">
       <h4 id="shell-windows">Windows</h4>
@@ -394,7 +393,6 @@ This course is at [David Hume Tower, University of Edinburgh](https://www.ed.ac.
     </div>
   </div>
 </div> {% comment %} End of 'shell' section. {% endcomment %}
-
 <div id="git"> {% comment %} Start of 'Git' section. GitHub browser compatability
            is given at https://help.github.com/articles/supported-browsers/{% endcomment %}
   <h3>Git</h3>
@@ -416,7 +414,6 @@ This course is at [David Hume Tower, University of Edinburgh](https://www.ed.ac.
     <a href="https://help.github.com/articles/keeping-your-email-address-private/">instructions
     for keeping your email address private</a> provided at GitHub.
   </p>
-
   <div class="row">
     <div class="col-md-4">
       <h4 id="git-windows">Windows</h4>
@@ -450,10 +447,8 @@ This course is at [David Hume Tower, University of Edinburgh](https://www.ed.ac.
     </div>
   </div>
 </div> {% comment %} End of 'Git' section. {% endcomment %}
-
 <div id="editor"> {% comment %} Start of 'editor' section. {% endcomment %}
   <h3>Text Editor</h3>
-
   <p>
     When you're writing code, it's nice to have a text editor that is
     optimized for writing code, with features like automatic
@@ -463,7 +458,6 @@ This course is at [David Hume Tower, University of Edinburgh](https://www.ed.ac.
     typing the escape key, followed by <code>:q!</code> (colon, lower-case 'q',
     exclamation mark), then hitting Return to return to the shell.
   </p>
-
   <div class="row">
     <div class="col-md-4">
       <h4 id="editor-windows">Windows</h4>
@@ -522,14 +516,12 @@ This course is at [David Hume Tower, University of Edinburgh](https://www.ed.ac.
     </div>
   </div>
 </div> {% comment %} End of 'editor' section. {% endcomment %}
-
 {% comment %}
 <div id="python"> {% comment %} Start of 'Python' section. Remove the third paragraph if
            the workshop will teach Python using something other than
            the Jupyter notebook.
            Details at https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility {% endcomment %}
   <h3>Python</h3>
-
   <p>
     <a href="https://python.org">Python</a> is a popular language for
     research computing, and great for general-purpose programming as
@@ -544,7 +536,6 @@ This course is at [David Hume Tower, University of Edinburgh](https://www.ed.ac.
       <strong>please make sure you install Python version 3.x</strong>
       (e.g., 3.6 is fine).
     </p>
-
     <p>
       We will teach Python using the <a href="https://jupyter.org/">Jupyter notebook</a>,
       a programming environment that runs in a web browser. For this to work you will need a reasonably
@@ -554,7 +545,8 @@ This course is at [David Hume Tower, University of Edinburgh](https://www.ed.ac.
       (some older browsers, including Internet Explorer version 9
       and below, are not).
     </p>
-
+    -->
+   <!--
   <div class="row">
     <div class="col-md-4">
       <h4 id="python-windows">Windows</h4>
@@ -617,7 +609,7 @@ This course is at [David Hume Tower, University of Edinburgh](https://www.ed.ac.
 {% endcomment %}
 </div> {% comment %} End of 'Python' section. {% endcomment %}
 {% endcomment %}
-
+-->
 <div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
   <h3>R</h3>
 
