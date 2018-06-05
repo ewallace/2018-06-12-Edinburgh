@@ -66,7 +66,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 
 
 
-  This workshop is hosted by [Edinburgh Parallel Computing Centre](https://www.epcc.ed.ac.uk/), and organised in collaboration by [ARCHER](http://www.archer.ac.uk), the [Software Sustainability Institute](http://www.software.ac.uk), and [UoE Research Data Service](https://www.ed.ac.uk/information-services/research-support/research-data-service/about-the-research-data-service).
+  This workshop is hosted by [EPCC](https://www.epcc.ed.ac.uk/), and organised in collaboration by [ARCHER](http://www.archer.ac.uk), the [Software Sustainability Institute](http://www.software.ac.uk), and [UoE Research Data Service](https://www.ed.ac.uk/information-services/research-support/research-data-service/about-the-research-data-service).
 
 
 {% comment %}
