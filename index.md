@@ -225,6 +225,9 @@ This course is at [David Hume Tower, University of Edinburgh](https://www.ed.ac.
   {% include lc/schedule.html %}
 {% endif %}
 
+<hr/>
+
+
 {% comment %}
   Collaborative Notes
 
