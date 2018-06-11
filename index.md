@@ -75,11 +75,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   Explain who your audience is. (In particular, tell readers if the workshop is only open to people from a particular institution.
  {% endcomment %}
 
-  The course is aimed at graduate students and other researchers.
-  **You don't need to have any previous knowledge of the tools that will
-    be presented at the workshop.**
-
-
 {% if page.carpentry == "swc" %}
   {% include sc/who.html %}
 {% elsif page.carpentry == "dc" %}
