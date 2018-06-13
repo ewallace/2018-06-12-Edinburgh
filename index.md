@@ -774,3 +774,15 @@ This course is at [David Hume Tower, University of Edinburgh](https://www.ed.ac.
   </ol>
 </div>
 {% endcomment %}
+
+
+<h2 id="More stuff">Post-workshop Materials</h2>
+<p>
+    <li>
+       <a href="files/code-handout.R">R code handout with Edits used in workshop! </a>.
+    </li>
+    
+    <li>
+       <a href="files/R-lesson-presentation-Edinburgh-2018-06-12.pdf"> Edward's presentation on why he uses R. </a>.
+    </li>
+<\p>
